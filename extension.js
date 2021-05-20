@@ -42,11 +42,9 @@ function _currentTestMethodName() {
 }
 
 function _executeCodeViaChildProcess(code) {
-  if (vscode.workspace.getConfiguration('runInIterm').get('activateWindow') === true) {
-    var activateCommand = ` -e 'activate' `;
-  } else {
-    var activateCommand = '';
-  }
+  const activateCommand =
+    vscode.workspace.getConfiguration('runInIterm').get('activateWindow') === true ? ` -e 'activate' ` : '';
+
   const command =
     `osascript ` +
     ` -e 'tell app "iTerm"' ` +
