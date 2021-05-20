@@ -3,7 +3,12 @@
   "displayName": "phpunit-iterm",
   "description": "Run PHPUnit tests in iTerm",
   "version": "0.0.1",
-  "publisher": "configuredco",
+  "publisher": "configured",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joecampo/phpunit-iterm.git"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.56.0"
   },
