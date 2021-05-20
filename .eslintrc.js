@@ -1,0 +1,30 @@
+module.exports = {
+  extends: ['joecampo'],
+  env: {
+    browser: false,
+    commonjs: true,
+    es6: true,
+    node: true,
+    mocha: true,
+  },
+  rules: {
+    'no-const-assign': 'warn',
+    'no-this-before-super': 'warn',
+    'no-undef': 'warn',
+    'no-unreachable': 'warn',
+    'no-unused-vars': 'warn',
+    'constructor-super': 'warn',
+    'valid-typeof': 'warn',
+  },
+  globals: {
+    App: 'readonly',
+    events: 'readonly',
+    toast: 'readonly',
+    Chart: 'readonly',
+    require: 'readonly',
+    Echo: 'readonly',
+    app: 'readonly',
+    process: 'readonly',
+    module: 'readonly',
+  },
+};
