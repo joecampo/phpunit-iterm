@@ -28,6 +28,7 @@ function _rootPath() {
 function _fileName() {
   return vscode.window.activeTextEditor.document.fileName;
 }
+
 function _currentTestMethodName() {
   let line = vscode.window.activeTextEditor.selection.active.line;
 
